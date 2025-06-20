@@ -11,3 +11,6 @@ By forecasting a complex system where supply, demand, transmission constraints, 
 
 I will focus exclusively on ERCOT's North and West load zones, using historical settlement point price data to build an LSTM model that predicts daily average price spreads between these regions. The model will identify arbitrage opportunities by forecasting when West Texas prices will be significantly lower than North Texas prices (>$25/MWh differential), enabling battery storage companies to optimize charge/discharge timing across geographic locations.
 
+### Target Variable: 
+
+Day-Ahead Market Settlement Prices: https://www.ercot.com/mp/data-products/data-product-details?id=NP4-190-CD
