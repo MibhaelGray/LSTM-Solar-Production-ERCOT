@@ -38,23 +38,3 @@ When uncertain, ask: *"Should I [option A] or [option B]?"*
 
 **Remember: Implement exactly what's asked, nothing more.**
 
-## DIRECTORY STRUCTURE (for context)
-
-Energy Forecasting/
-  ├── Data/
-  │     ├── ERCOT Data/
-  │     │     └── Wind Data/
-  │     │           └── windPull.ipynb
-  │     ├── Scripts/
-  │     │     ├── HubFilter.py
-  │     │     ├── merge.py
-  │     │     ├── dataExtraction.py
-  │     │     ├── merge_ercot_csv.py
-  │     │     └── unzip_ercot_data.py
-  │     └── filter_merged_ercot_data.csv
-  ├── ERCOT.md
-  ├── notebooks/
-  │     └── model.ipynb
-  ├── README.md
-  ├── requirements.txt
-  └── src/
