@@ -19,6 +19,7 @@ Day-Ahead Market Settlement Prices for WEST_HUB: https://www.ercot.com/mp/data-p
 
 ## DIRECTORY STRUCTURE (for context)
 
+```
 Energy Forecasting/
   ├── Data/
   │     ├── ERCOT Data/
@@ -37,3 +38,5 @@ Energy Forecasting/
   ├── README.md
   ├── requirements.txt
   └── src/
+```
+
