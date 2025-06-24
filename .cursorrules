@@ -1,0 +1,60 @@
+# CURSOR.md - ERCOT Price Forecasting Project
+
+## CORE PRINCIPLE
+**Code ONLY what is explicitly requested. No overengineering. Ask before assuming.**
+
+## PROJECT GOAL
+LSTM model for ERCOT West Texas day-ahead price forecasting using wind generation, system load, and natural gas prices. Target: <10% MAPE.
+
+## CODING RULES
+
+### DO
+- Write minimal functions that do exactly one thing
+- Import only what's needed
+- Use simple solutions
+- Ask when uncertain
+
+### DON'T (unless requested)
+- Add error handling, logging, or validation
+- Create utility classes or helper functions  
+- Add visualization or progress bars
+- Optimize for performance
+- Add configuration files
+
+## COMMUNICATION
+When uncertain, ask: *"Should I [option A] or [option B]?"*
+
+**Always ask before adding anything beyond the specific request.**
+
+## TECH STACK
+**Allowed**: pandas, numpy, tensorflow/keras, scikit-learn, matplotlib (when requested), requests
+**Ask first**: Everything else
+
+## DATA NOTES
+- ERCOT uses Hour Ending 1-24 (convert to 0-23)
+- Negative prices are legitimate market conditions
+- Price spikes >$4,000/MWh are normal during scarcity
+
+
+**Remember: Implement exactly what's asked, nothing more.**
+
+## DIRECTORY STRUCTURE (for context)
+
+Energy Forecasting/
+  ├── Data/
+  │     ├── ERCOT Data/
+  │     │     └── Wind Data/
+  │     │           └── windPull.ipynb
+  │     ├── Scripts/
+  │     │     ├── HubFilter.py
+  │     │     ├── merge.py
+  │     │     ├── dataExtraction.py
+  │     │     ├── merge_ercot_csv.py
+  │     │     └── unzip_ercot_data.py
+  │     └── filter_merged_ercot_data.csv
+  ├── ERCOT.md
+  ├── notebooks/
+  │     └── model.ipynb
+  ├── README.md
+  ├── requirements.txt
+  └── src/

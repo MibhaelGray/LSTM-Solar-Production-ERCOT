@@ -15,3 +15,25 @@ I will focus exclusively on ERCOT's West Texas load zone (WEST_HUB), using histo
 ### Target Variable: 
 
 Day-Ahead Market Settlement Prices for WEST_HUB: https://www.ercot.com/mp/data-products/data-product-details?id=NP4-190-CD
+
+
+## DIRECTORY STRUCTURE (for context)
+
+Energy Forecasting/
+  ├── Data/
+  │     ├── ERCOT Data/
+  │     │     └── Wind Data/
+  │     │           └── windPull.ipynb
+  │     ├── Scripts/
+  │     │     ├── HubFilter.py
+  │     │     ├── merge.py
+  │     │     ├── dataExtraction.py
+  │     │     ├── merge_ercot_csv.py
+  │     │     └── unzip_ercot_data.py
+  │     └── filter_merged_ercot_data.csv
+  ├── ERCOT.md
+  ├── notebooks/
+  │     └── model.ipynb
+  ├── README.md
+  ├── requirements.txt
+  └── src/
